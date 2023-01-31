@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con{
+    background-color: #797d83;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    padding: 20px 0;
+}
+header .logo{
+    font-family: fantasy;
+    letter-spacing: 3px;
+    box-shadow: 10px 10px 10px black;
+    animation: light 10s linear infinite;
+}
+@keyframes light {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+        box-shadow: 10px 10px 10px white;
+    }
+    100% {
+        color: black;
+    }
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin:0 10px;
+    font-weight: bold;
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 6px 15px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+header ul li a:hover{
+   background: white;
+   color: goldenrod;
+}
+.co{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.co .text{
+    width: 40%;
+}
+.co .text h2 {
+font-size: 40px;
+text-transform: uppercase;
+}
+.co .text p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.co .text a{
+   padding: 6px 15px;    
+   background-color:rgb(255, 255, 255);
+   text-decoration: none;
+   color: black;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.co .text a:hover{
+    padding: 8px 17px;
+    color: goldenrod;
+}
+.co .image{
+    width: 30%;
+}
+.co .image img{
+    margin-top: 30px;
+    width: 320px;
+    height: 360px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.icons img{
+    width: 50px;
+    height: 70px;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+}
+.icons img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+}
+hr{
+width: 50%;
+transform: translate(50%,-50%);
+}
+
+
+
+
